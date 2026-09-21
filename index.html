@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="data:image/png;base64,">
+<title>M. Reimer's Website</title>
+<style>
+	@media (prefers-color-scheme: dark){
+		body { background:#000; }
+	}
+	body{
+		margin:1em auto;
+		max-width:40em;
+		padding:0 .62em 3.24em;
+		font:1.2em/1.62 sans-serif;
+	}
+	h1,h2,h3 { line-height:1.2; }
+	@media print{ body{ max-width:none; } }
+
+	header { text-align:center; }
+
+	header aside{
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		gap:1rem;
+		text-align:center;
+		flex-wrap:wrap;
+	}
+
+	header aside .entry{
+		flex:0 1 auto;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		white-space:nowrap;
+	}
+
+	.row{
+		display:flex;
+		align-items:center;
+		width:100%;
+	}
+	.entry,.price{ white-space:nowrap; }
+	.fill{
+		flex:1;
+		margin:0 8px;
+		overflow:hidden;
+	}
+	.fill::before{
+		content:"----------------------------------------------------------------";
+		white-space:nowrap;
+		letter-spacing:2px;
+	}
+</style>
+</head>
+<body>
+<article>
+<header>
+	<h1><em>M. Reimer's</em> Website</h1>
+	<aside>
+		<span class="entry"><a href="index.html">Home</a></span>
+		<span class="entry"><a href="about.html">About</a></span>
+		<span class="entry"><a href="impressum.html">Impressum</a></span>
+	</aside>
+</header>
+
+<main>
+	<p>
+		Diese Website ist die Wurzel meiner Arbeit im Internet:
+		Software, Systeme, Netze, Werkzeuge und technische Experimente.
+	</p>
+
+	<p>
+		Der Schwerpunkt liegt auf kleinen, nachvollziehbaren Lösungen,
+		direkten Schnittstellen und Software, deren Zweck im Aufbau erkennbar bleibt.
+	</p>
+
+	<div class="row">
+		<span class="entry">Software</span>
+		<span class="fill"></span>
+		<span class="price">Werkzeuge</span>
+	</div>
+	<div class="row">
+		<span class="entry">Linux / Unix</span>
+		<span class="fill"></span>
+		<span class="price">Systeme</span>
+	</div>
+	<div class="row">
+		<span class="entry">Netzwerke</span>
+		<span class="fill"></span>
+		<span class="price">Infrastruktur</span>
+	</div>
+</main>
+
+<p>
+	If you can bring this website further beyond perfection,
+	<a href="https://github.com/KeenRivals/bestmotherfucking.website"
+	   title="KeenRivals/bestmotherfucking.website on GitHub">send a pull request on GitHub</a>.
+</p>
+</article>
+</body>
+</html>
